@@ -78,7 +78,6 @@
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#map" class="login">Lieu</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -411,108 +410,8 @@
     </div>
 </section>
 
-<section class="rsvp text-center" id="rsvp">
 
-  <!-- RSVP Success Modal -->
-  <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog"
-       aria-labelledby="rsvp-modal-title" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
 
-          <div class="section-padding">
-            <h3 id="rsvp-modal-title">Merci !</h3>
-            <p>On a hâte de fêter ça avec vous.</p>
-            <div id="add-to-cal"></div>
-          </div>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-
-        <h3>RSVP</h3>
-        <p>Merci de répondre avant le <strong>1er Mai 2026</strong>.</p>
-
-        <form id="rsvp-form" class="rsvp-form" action="" method="POST" autocomplete="on">
-
-          <!-- Row 1: Email + Name -->
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <div class="form-input-group rsvp-field">
-                <span class="rsvp-icon" aria-hidden="true"><i class="fa fa-envelope fa-fw"  ></i></span>
-                <input type="email" name="email" id="email" placeholder="E-mail" required>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6">
-              <div class="form-input-group rsvp-field">
-                <span class="rsvp-icon" aria-hidden="true"><i class="fa fa-user fa-fw"></i></span>
-                <input type="text" name="name" id="name" placeholder="Nom et prénom" required>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 2: Partner + Invite Code -->
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <div class="form-input-group rsvp-field">
-                <span class="rsvp-icon" aria-hidden="true"><i class="fa fa-users fa-fw"></i></span>
-                <input type="text" name="extras" id="extras" placeholder="Nom de l’accompagnant(e) (sur invitation)">
-              </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6">
-              <div class="form-input-group rsvp-field">
-                <span class="rsvp-icon" aria-hidden="true"><i class="fa fa-key fa-fw"></i></span>
-                <input type="number" name="invite_code" id="invite_code" min="0" placeholder="Code d’invitation" required>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 3: Allergies + Lodging -->
-          <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <div class="form-input-group rsvp-field">
-                <span class="rsvp-icon" aria-hidden="true"><i class="fa fa-cutlery fa-fw"></i></span>
-                <input type="text" name="allergies" id="allergies" placeholder="Allergies / restrictions alimentaires">
-              </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6">
-              <div class="form-input-group rsvp-field">
-                <span class="rsvp-icon" aria-hidden="true"><i class="fa fa-bed fa-fw"></i></span>
-                <select name="lodging" id="lodging">
-					<option value="" selected disabled>Hébergement nécessaire ? (Oui/Non)</option>
-					<option value="Yes">Oui</option>
-					<option value="No">Non</option>
-				</select>
-              </div>
-            </div>
-          </div>
-
-          <!-- Alerts -->
-          <div class="row">
-            <div class="col-md-12" id="alert-wrapper"></div>
-          </div>
-
-          <!-- Submit Button -->
-          <button type="submit" class="btn-fill rsvp-btn">Envoyer le RSVP</button>
-
-        </form>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-</section> <!-- end RSVP -->
 
 <!-- Gifts (low-key) -->
 <section id="gifts" class="section-padding">
